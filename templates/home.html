@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<h1>Welcome {{name}}</h1>
+
+
+<h4>Additon</h4>
+<form action="add/" method="post">
+    {%csrf_token%}
+    <input type="number" name="num1">
+    <input type="number" name="num2">
+    <input type="submit">
+</form>
+
+<br>
+
+<h4>Subtraction</h4>
+<form action="subtract/" method="post">
+    {%csrf_token%}
+    <input type="number" name="num1">
+    <input type="number" name="num2">
+    <input type="submit">
+</form>
+
+<br>
+
+<h4>Multiplication</h4>
+<form action="multiply/" method="post">
+    {%csrf_token%}
+    <input type="number" name="num1">
+    <input type="number" name="num2">
+    <input type="submit">
+</form>
+
+<br>
+
+<h4>Division</h4>
+<form action="divide/" method="post">
+    {%csrf_token%}
+    <input type="number" name="num1">
+    <input type="number" name="num2">
+    <input type="submit">
+</form>
+
+{% endblock %}
