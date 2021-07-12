@@ -1,2 +1,2 @@
 # Project_Calculator
-Simple calculator to perform addition, subtraction, multiplication and Division.
+Simple Django based web calculator to perform addition, subtraction, multiplication and Division.
