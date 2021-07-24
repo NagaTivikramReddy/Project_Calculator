@@ -64,9 +64,4 @@ def div(request):
     except ZeroDivisionError as e:
         result = e
 
-    # if num2 != 0:
-    #     result = num1 / num2
-    # else:
-    #     result = "Cannot divide by zero"
-
     return render(request, 'result.html', {'result': result})
